@@ -22,13 +22,13 @@ define( 'WP_CACHE', true ); // Added by WP Rocket
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'apexbran_local_09jd09j098h' );
+define( 'DB_NAME', 'apexbran_redesign_j89jhd9h' );
 // define( 'DB_NAME', 'local' );
 /** MySQL database username */
-define( 'DB_USER', 'apexbran_local_09j0d0Hd' );
+define( 'DB_USER', 'apexbran_redesign_j90dj98jd9' );
 // define( 'DB_USER', 'root' );
 /** MySQL database password */
-define( 'DB_PASSWORD', '5HAn{VgvdHfs' );
+define( 'DB_PASSWORD', 'mug#U8*gB0XP' );
 // define( 'DB_PASSWORD', 'root' );
 /** MySQL hostname */
 // define( 'DB_HOST', '67.227.174.185' );
