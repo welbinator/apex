@@ -16,3 +16,11 @@ wp-settings.php
 wp-signup.php 
 wp-trackback.php
 xmlrpc.php
+wp-config.php
+wp-content/ai1wm-backups
+wp-content/cache
+wp-content/maintenance
+wp-content/mu-plugins
+wp-content/tf_cache_config
+wp-content/wflogs
+wp-content/wp-rocket-config
