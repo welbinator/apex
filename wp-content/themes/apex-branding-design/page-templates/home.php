@@ -5,7 +5,7 @@
 <div class="hero"><img class="hero-image" src="<?php echo get_template_directory_uri() ?>/assets/img/Apex-outline.svg">
         <div class="container hero-container">
             <div class="row">
-                <div class="col-6 d-flex flex-column justify-content-center">
+                <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center">
                     <h1 class="hero-header">We help businesses elevate their brand through the power of strategy, design and creativity.</h1>
 					 <div class="hero-tagline">
                         <p>Has your product or service outgrown your brand? We can help.</p>
@@ -16,7 +16,7 @@
                     <!-- <button class="btn btn-secondary hero-btn" id="show-video"><i class="far fa-play-circle"></i> Watch Video</button> -->
                
                 </div>
-                <div class="col-6" id="home-case-stud"><iframe id="angie-video" type="text/html" width="640" height="360" src="https://www.youtube-nocookie.com/embed/H5-HaRzq4Wc?modestbranding=1" frameborder="0"></iframe></div>
+                <div class="col-md-6 col-sm-12" id="home-case-stud"><iframe id="angie-video" type="text/html" width="640" height="360" src="https://www.youtube-nocookie.com/embed/H5-HaRzq4Wc?modestbranding=1" frameborder="0"></iframe></div>
             </div>
         </div>
     </div>
