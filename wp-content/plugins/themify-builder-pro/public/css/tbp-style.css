@@ -1,0 +1,92 @@
+/* Builder Grid */
+.tbp_template .tb_sticky_wrapper>.module_row>.row_inner,
+.tbp_template>.themify_builder>.module_row>.row_inner{
+	width:1160px;
+	max-width:100%;
+	margin:0 auto
+}
+.tbp_advanchd_archive_wrap .module_row>.row_inner,
+.tbp_template .tb_sticky_wrapper>.module_row.fullwidth>.row_inner,
+.tbp_template>.themify_builder>.module_row.fullwidth>.row_inner{
+    width:100%;
+    max-width:100%
+}
+.tbp_template .module_subrow{
+    width:auto
+}
+.tbp_template .module_subrow.active_module{
+    width:inherit
+}
+.tbp_template .module_subrow.active_module:hover{
+    z-index:121!important
+}
+.tbp_template .tbp_advanchd_archive_wrap .module_subrow.active_module:hover{
+	z-index:auto!important
+}
+/* Site Logo */
+.module-site-logo{
+	line-height:1;
+	word-break:keep-all
+}
+
+/* Post read-more button inline */
+.read-more{
+	display:inline-block
+}
+/* Post meta divider */
+.tbp_post_meta>span:after{
+    display:inline-block;
+    content:'';
+    width:1px;
+    height:1.3em;
+    margin:0 .1em 0 .2em;
+    white-space:nowrap;
+    vertical-align:middle;
+    border-left:1px solid rgba(180,180,180,.25);
+    transform:skewX(-15deg)
+}
+.tbp_post_meta>span:last-child:after{
+	display:none
+}
+/* Author Info */
+.tbp_author_info_img{
+	float:left;
+	margin:0 15px 15px 0
+}
+.tbp_author_stack .tbp_author_info_img{
+	float:none;
+	margin:0 0 1em
+}
+/* Post */
+.tbp_template .builder-posts-wrap.loops-wrapper .post{
+	margin-top:0
+}
+.tbp_post_meta .tbp_post_meta_item time{
+	display:inline-block
+}
+/* Responsive */
+@media screen and (max-width:1260px){
+	.tbp_template .tb_sticky_wrapper>.module_row>.row_inner,
+	.tbp_template>.themify_builder>.module_row>.row_inner{
+		max-width:96%
+	}
+	.tbp_template .tb_sticky_wrapper>.module_row.fullwidth>.row_inner,
+	.tbp_template>.themify_builder>.module_row.fullwidth>.row_inner{
+		max-width:100%
+	}
+}
+@media screen and (max-width:760px){
+    .tbp_template .tb_sticky_wrapper>.module_row>.row_inner,
+    .tbp_template>.themify_builder>.module_row>.row_inner{
+            max-width:90%
+    }
+}
+#wpadminbar .tb_disabled_turn_on.toggle_tb_builder a .tb_tooltip{
+    display:none
+}
+.tb_disabled_turn_on.toggle_tb_builder{
+    opacity:1
+}
+.tb_disabled_turn_on.toggle_tb_builder a{
+    cursor:pointer
+}

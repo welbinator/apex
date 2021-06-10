@@ -1,0 +1,749 @@
+/*!
+Theme Name: Apex Branding & Design
+Theme URI: http://underscores.me/
+Author: Apex Branding & Design
+Author URI: http://apexbranding.design
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: apex-branding-design
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Apex Branding & Design is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+// Import variables and mixins.
+@import "abstracts/abstracts";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/base";
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+// @import "layouts/content-sidebar"; // Uncomment this line for a sidebar on right side of your content.
+// @import "layouts/sidebar-content"; // Uncomment this line for a sidebar on left side of your content.
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/components";
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+@import "plugins/jetpack/infinite-scroll";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+@import "utilities/accessibility";
+
+/* Alignments
+--------------------------------------------- */
+@import "utilities/alignments";
+
+/* My Styles
+-----------------------------------------------*/
+
+.logo {
+  width: 85px;
+  fill: currentColor;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav {
+    flex-direction: row;
+    width: calc(100% - 85px - 5.25rem);
+    justify-content: center;
+  }
+}
+
+.hero {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  padding: 3rem 5rem;
+  padding-top: 20vh;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 75vh;
+  max-width: 90%;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+body {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 1.2rem;
+  background-color: #3a3a3a;
+  color: white;
+}
+
+.nav-link {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: normal;
+  border-radius: 0;
+  padding: 0.5rem 1rem;
+  border-width: 2px;
+  font-size: 1.15\rem;
+}
+
+.btn-primary {
+  color: #fac56b;
+  border-color: #fac56b;
+  background-color: #4b4b4b;
+  font-weight: bold;
+}
+
+a.btn.btn-primary:visited {
+  color: #fac56b;
+}
+a.btn.btn-primary:hover {
+  color: black;
+}
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: #000;
+  background-color: #fac56b;
+  border-color: #fac56b;
+  box-shadow: 0 0 0 0.25rem rgba(253, 188, 7, 0.5);
+}
+
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(253, 188, 7, 0.5);
+}
+
+.btn-check:active + .btn-primary,
+.btn-check:checked + .btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show > .btn-primary.dropdown-toggle {
+  color: #000;
+  background-color: #fac56b;
+  border-color: #fac56b;
+}
+
+.btn-primary:hover {
+  color: #000;
+  background-color: #fac56b;
+  border-color: #fac56b;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+}
+
+.section {
+  padding: 3rem 5rem;
+  position: relative;
+}
+
+.section.no-gutter {
+  padding: 0;
+}
+
+.section.no-gutter .container,
+.section.no-gutter .container-fluid {
+  padding: 0;
+}
+.section.team .container {
+  max-width: 1068px;
+}
+.client-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 210px;
+}
+
+.client-background-image {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  transition: transform 250ms ease;
+}
+
+.client-background-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.69);
+  z-index: 1;
+}
+
+.client-logo {
+  position: relative;
+  z-index: 3;
+  width: auto;
+  max-width: 300px;
+  max-height: 100px;
+}
+
+.client-container:hover .client-background-image {
+  transform: scale(1.1);
+}
+
+.client-container-action-text {
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(250, 197, 107, 0.98);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0;
+  transition: opacity 550ms ease;
+  font-weight: bold;
+}
+
+.client-container-action-text span {
+  color: black;
+  text-decoration: none;
+}
+
+.client-container:hover .client-container-action-text {
+  opacity: 1;
+}
+
+.founder-image {
+  width: 100%;
+}
+
+.team-header {
+  margin-top: 0.7rem;
+  text-align: center;
+}
+
+.team-header.subheader {
+  margin-top: 0;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 3rem 15px;
+    position: relative;
+  }
+}
+
+.section.footer {
+  margin-top: 5rem;
+  box-shadow: 0 0 47px rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+}
+
+.footer .nav.social-links .nav-item .nav-link {
+  padding: 0.2rem 0.5rem !important;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.footer .nav .nav-item:first-child .nav-link {
+  padding-left: 0!important;
+}
+
+@media (max-width: 991px) {
+  .footer .nav .nav-item .nav-link {
+    padding-left: 0;
+  }
+}
+
+.footer .nav-link {
+  color: white;
+}
+
+.footer-logo {
+  opacity: 0.1;
+  position: absolute;
+  width: 49vw;
+  max-width: 700px;
+  min-width: 500px;
+  margin-left: auto;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%); 
+  z-index: -1;
+}
+
+.footer .container,
+.footer .container-fluid {
+  z-index: 1;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.footer-header {
+  font-family: "Cardo";
+  -webkit-text-stroke-width: 0;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding: 7rem 1rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .client-container {
+    height: 38vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .client-container {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .client-container-action-text {
+    opacity: 2;
+    height: 65px;
+    top: unset;
+    font-size: 1.5rem;
+  }
+}
+
+.hero .container {
+  position: relative;
+}
+
+.navbar {
+  background-image: linear-gradient(#3a3a3a 50%, rgba(58, 58, 58, 0));
+  min-height: 15vh;
+}
+
+.card {
+  position: relative;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 47px rgba(0, 0, 0, 0.32);
+}
+
+.card.portfolio-card {
+  background-color: black;
+  color: white;
+  min-height: 70vh;
+  max-height: 400px;
+  overflow: hidden;
+  border-left: 2px solid #fac56b;
+}
+
+.card-portfolio-image {
+  width: 100% !important;
+  margin-left: auto;
+  z-index: 0;
+  opacity: 0.2;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .card-portfolio-image {
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% !important;
+  }
+}
+
+.portfolio-card .card-body {
+  position: absolute;
+  width: 100%;
+  max-width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1.75rem;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.btn-container .btn {
+  margin: 0 0.5rem 0 0;
+}
+
+.btn-container .btn:last-child {
+  margin-right: 0;
+}
+
+.card-body {
+  padding: 1.75rem;
+}
+
+@media (max-width: 991px) {
+  .portfolio-card .card-body {
+    max-width: unset;
+    position: relative;
+  }
+}
+
+.portfolio-card-container {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.portfolio-glimpse-bar {
+  padding: 1.75rem 0.7rem;
+  margin-right: 15px;
+  position: relative;
+  border-right: 1px solid #fac56b;
+  color: black;
+  background-color: #fac56b;
+  box-shadow: 0 0 47px rgba(0, 0, 0, 0.32);
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-glimpse-bar:after {
+  content: "";
+  width: 15px;
+  height: 3px;
+  background-color: #fac56b;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: -15px;
+}
+
+.portfolio-information {
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+  .portfolio-information {
+    transform: unset;
+  }
+}
+
+.portfolio-glimpse-bar.red {
+  background-color: #ff6666;
+}
+
+@media (max-width: 767px) {
+  .portfolio-card-container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-glimpse-bar {
+    text-orientation: unset;
+    writing-mode: unset;
+    padding: 0.75rem 1.75rem;
+    margin-right: 0;
+    border-right: none;
+    border-top: 1px solid black;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-glimpse-bar:after {
+    height: 15px;
+    width: 3px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: unset;
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.hero-header {
+  font-weight: bold;
+  -webkit-text-stroke-width: 0;
+  font-size: clamp(1.5rem, 3vw, 2em);
+}
+
+.navbar-toggler {
+  padding: 0.75rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #3a3a3a;
+  }
+}
+
+@media (max-width: 767px) {
+  .card.portfolio-card {
+    border-bottom: 2px solid #fac56b;
+    border-left: none;
+  }
+}
+
+.section.no-gutter.about-flare {
+  max-height: 40vh;
+  overflow: hidden;
+}
+
+.about-flare img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero.work-single {
+  min-height: 50vh;
+  height: unset;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero.about {
+  height: auto;
+  max-height: 50vh;
+}
+
+.page-template-about .section .container {
+  max-width: 1100px;
+}
+.section.stats {
+  background-color: #fac56b;
+  color: black;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.stats {
+  font-weight: bold;
+  -webkit-text-stroke-width: 0;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.section.stats .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats:nth-child(2) {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0.5rem;
+  text-align: center;
+  max-width: 56vh;
+  margin: 0 auto;
+}
+
+.hero.work-single img {
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(0.5rem) grayscale(1) opacity(100%);
+}
+
+.hero-container {
+  z-index: 2;
+}
+.hero-container p {
+  font-size: 1em;
+}
+.hero-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.79);
+}
+.hero-btn:hover {
+  box-shadow: 0 0 5px 2px #fff, 0.5rem 0.5rem 30px #58448e00;
+}
+.hero-tagline {
+	margin-top: 30px;
+}
+.hero-tagline p {
+	margin: 0;
+}
+#home-case-study {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background: #000000c9;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s ease;
+
+  iframe {
+    transform: translateY(5%);
+    transition: 1s ease;
+  }
+}
+#home-case-study.show {
+  opacity: 1;
+  pointer-events: all;
+
+  iframe {
+    transform: translateY(0%);
+  }
+}
+.btn.btn-secondary {
+  background: #fac56b;
+  border: 2px solid #fac56b;
+  color: black;
+  font-weight: bold;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-6-9 22:31:8
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+ @-webkit-keyframes shake-horizontal{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%{-webkit-transform:translateX(10px);transform:translateX(10px)}80%{-webkit-transform:translateX(8px);transform:translateX(8px)}90%{-webkit-transform:translateX(-8px);transform:translateX(-8px)}}@keyframes shake-horizontal{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%{-webkit-transform:translateX(10px);transform:translateX(10px)}80%{-webkit-transform:translateX(8px);transform:translateX(8px)}90%{-webkit-transform:translateX(-8px);transform:translateX(-8px)}}
+
+.shake-horizontal{-webkit-animation:shake-horizontal 8s cubic-bezier(.455,.03,.515,.955) infinite both;animation:shake-horizontal 8s cubic-bezier(.455,.03,.515,.955) infinite both}

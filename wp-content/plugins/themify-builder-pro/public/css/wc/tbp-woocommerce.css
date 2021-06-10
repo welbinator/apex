@@ -1,0 +1,36 @@
+/* on sale badge left/right alignment */
+.buttons-fullwidth .button,
+.buttons-fullwidth .quantity .qty{
+	width:100%
+}
+.quantity .qty{
+	padding:0.45em;
+	text-align:center
+}
+.woocommerce div.product form.cart{
+	display:inline-block
+}
+.woocommerce .tb_module_front button.button.disabled{
+	opacity:1
+}
+.module-archive-products.woocommerce ul.products li.product a img{
+	margin:0
+}
+/* ARCHIVE PRODUCT GRID
+================================================ */
+.woocommerce .tbp_posts_wrap.products::before{
+	display:block; /*fix to safari grid broken*/
+}
+/* product grid layout overriding body class */
+.builder-posts-wrap.loops-wrapper.products{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	align-items:flex-start;
+	justify-content:flex-start
+}
+/* fix SHOPDOCK Plugin conflict */
+.tbp_template.product{
+	display:block;
+	margin:0
+}

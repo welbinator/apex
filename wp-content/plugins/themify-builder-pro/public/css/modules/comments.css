@@ -1,0 +1,27 @@
+.module-comments label{
+    display:inline-block
+}
+.module-comments .comment-form-author,
+.module-comments .comment-form-email{
+    width:50%;
+    float:left;
+    box-sizing:border-box
+}
+.module-comments .comment-form-author{
+    padding-right:2%
+}
+.module-comments .comment-form-email{
+    padding-left:2%
+}
+.module-comments .form-submit,
+.module-comments .comment-form-comment,
+.module-comments .comment-form-url,
+.module-comments .comment-form-rating{
+    clear:both
+}
+.module-comments .comment-form input[type=text],
+.module-comments .comment-form input[type=email],
+.module-comments .comment-form input[type=url]{
+    width:100%;
+    max-width:none
+}

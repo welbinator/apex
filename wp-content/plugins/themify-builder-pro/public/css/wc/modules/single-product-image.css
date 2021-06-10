@@ -1,0 +1,19 @@
+
+.woocommerce #tbp_content div.product div.images.woocommerce-product-gallery{
+	width:100%
+}
+.woocommerce div.product div.images.woocommerce-product-gallery .flex-control-thumbs li{
+	clear:none!important;
+	width:60px
+}
+.tb_module_front .product .images .woocommerce-product-gallery__image[data-thumb]:nth-child(n+2){
+	display:none
+}
+.module-product-image.thumb-img-left .woocommerce-product-gallery.images .flex-control-thumbs li{
+	width:100%;
+	float:none;
+	display:block
+}
+.module-product-image.tbp_disable_wc_zoom .woocommerce-product-gallery__image{
+	pointer-events:none
+}
