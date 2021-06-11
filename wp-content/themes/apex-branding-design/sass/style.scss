@@ -761,7 +761,13 @@ h6 {
   color: black;
   font-weight: bold;
 }
-
+.error-404 {
+  height: 50vh;
+  padding: 10vh 0;
+}
+.error-404 .page-header h1, .error-404 .page-content p {
+  text-align: center;
+}
 
 
 /* ----------------------------------------------
