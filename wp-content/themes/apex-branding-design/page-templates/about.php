@@ -2,7 +2,7 @@
 <?php echo get_header("apex"); ?>
 
 <div class="hero about">
-        <div class="container hero-contaienr">
+        <div class="container hero-container">
             <div class="row">
                 <div class="col-12 mx-auto text-center">
                     <h1 class="hero-header">Branding is more than a buzzword.</h1>

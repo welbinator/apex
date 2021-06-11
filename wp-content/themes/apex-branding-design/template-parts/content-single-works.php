@@ -10,7 +10,7 @@
 
 ?>
 <div class="hero work-single"><img src="<?php the_field('hero_image_single'); ?>">
-    <div class="container hero-contaienr">
+    <div class="container hero-container">
         <div class="row">
             <div class="col-12 col-md-6 mx-auto">
                 <?php
