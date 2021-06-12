@@ -1,4 +1,4 @@
-<?php /* Template Name: Home Page Yo */ ?>
+<?php /* Template Name: Home Page */ ?>
 <?php echo get_header("apex"); ?>
 
 
