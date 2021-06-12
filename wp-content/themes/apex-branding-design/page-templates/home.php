@@ -9,7 +9,7 @@
                     <h1 class="hero-header">We help businesses elevate their brand through the power of strategy, design and creativity.</h1>
 					 <div class="hero-tagline">
                         <p class="mb-3">Has your product or service outgrown your brand?</p> 
-                        <p class="mb-3">It's ok, it happens! Luckily, we know how to fix it.</p>
+                        <p class="mb-3">It's ok, it happens! Luckily, we know how to fix it!</p>
                         <p>Check out Angie's rebrand story <i class="fas fa-arrow-right shake-horizontal ms-3"></i> <i class="fas fa-arrow-down shake-vertical ms-3"></i></p>
                      </div>
 				
